@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardFooter, Button, Modal, ModalHeader, ModalBody, Label, Row, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardFooter, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 
     class CommentForm extends Component{
         constructor(props){
