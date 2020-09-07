@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Oswald", "Open Sans", sans-serif; 
+  font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-theme: #ffc601;
+  --color-theme-secondary: #1e3a5f;
+  --color-grey-light: #d6d6d6;
+  --bg-extralinks: #bf2324;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-theme{
+  background-color: var(--color-theme);
+  border-color: var(--color-theme);
+  font-weight: 300;
+  letter-spacing: 0.02rem;   
+  text-transform: uppercase;
+  border-radius: 0%;
+}
+
+.bg-theme{
+  background-color: var(--color-theme);
+  color: #fff;
+}
+
+
+.bg-theme-secondary{
+  background-color: var(--color-theme-secondary);
+  color: #fff;
+}
+
+.media-heading{
+  font-size: 1.2rem;
+}
+
+h1, h2, h3 .card-body>.card-title{
+  font-family: "oswald", cursive;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h2, .media-heading{
+    font-family: "oswald extralight";
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-top: 10px;
+}
+
+h3{
+  font-weight: 300;
+}
+
+h4{
+  font-family: "oswald", cursive;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+hr{
+  border-top: solid #ffc601 1px;
+}
+
+.hr-secondary{
+  border-top: solid var(--color-grey-light) 1px;
+}
+
+.price{
+  font-family: "oswald", cursive;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.card{
+  border: 0;
+}
+
+.card-title{
+  font-weight: 300;
+  font-size: 1.15rem;
+}
+
+.card-text, .media-body, dt{
+  color:#4c4d4f;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.card-footer, .price {
+  /*background-color: #ffc601;*/
+  background-color: #fff;
+  color: #b00f57;
+  
+}
+
+.card-img{
+  margin-top: 30px;
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  /* background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B); */
+  background-image: url('/assets/images/bgimg.jpg');
+  /* background-image: url(https://cdn.pixabay.com/photo/2017/11/06/21/11/paint-2924891_1280.jpg); */
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron h2 {
+  color: #CEC8FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-dark {
+  background-color: var(--color-theme-secondary);
+}
+
+.nav-link {
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-size: 0.80rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  background-image: linear-gradient(var(--color-theme-secondary), var(--color-theme-secondary));
+  padding: 20px 0;
+  color: #fff!important;
+}
+
+.site-footer a{
+  color: #fff;
+}
+
+ul li{
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+footer .fa{
+  letter-spacing: 1rem;
 }
