@@ -124,9 +124,7 @@ hr{
 .jumbotron {
   margin: 0;
   padding: 30px;
-  /* background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B); */
   background-image: url('/assets/images/bgimg.jpg');
-  /* background-image: url(https://cdn.pixabay.com/photo/2017/11/06/21/11/paint-2924891_1280.jpg); */
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;

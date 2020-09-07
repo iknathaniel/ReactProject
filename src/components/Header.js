@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Nav,Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Nav,Navbar, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -67,6 +67,11 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink className="nav-link" to="/pielist">
                                     Pies
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/saladlist">
+                                    Salad
                                 </NavLink>
                             </NavItem>
                             <NavItem>

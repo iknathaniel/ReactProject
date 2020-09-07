@@ -1,12 +1,12 @@
 import React from 'react';
 import { Media } from 'reactstrap';
 
-function PizaList(props) {
+function SaladList(props) {
 
-    const pizzas = props.pizzas.map(pizza => {
+    const salads = props.salads.map(salad => {
         return (
-            <Media tag="li" key={pizza.id}>
-                <RenderPizza pizza={pizza}/>
+            <Media tag="li" key={salad.id}>
+                <RenderSalad salad={salad}/>
             </Media>
         );
     }); 
@@ -15,14 +15,14 @@ function PizaList(props) {
         <div className="container">
             <div className="row mt-3">
                 <div className="col-12">
-                    <h2>Best PIZZA in town</h2>
+                    <h2>Healthy SALADS</h2>
                     <hr />
                 </div>
             </div>
             <div className="row">
                 <div className="col mt-4">
                     <Media list>
-                        {pizzas}
+                        {salads}
                     </Media>
                 </div>
             </div>
@@ -30,15 +30,15 @@ function PizaList(props) {
     );
 }
 
-function RenderPizza({pizza}){
-    if(pizza){
+function RenderSalad({salad}){
+    if(salad){
         return(
             <React.Fragment>
-                <Media object width="250" src={pizza.image} alt={pizza.name} />
+                <Media object width="250" src={salad.image} alt={salad.name} />
                 <Media body className="col-md-5 mb-4">
-                    <Media heading>{pizza.name}</Media>
-                                   <h4>{pizza.calories}</h4>
-                                   {pizza.description}<br/><br/><p className="price">{pizza.priceDollar}<sup>{pizza.priceCent}</sup></p>
+                    <Media heading>{salad.name}</Media>
+                                   <h4>{salad.calories}</h4>
+                                   {salad.description}<br/><br/><p className="price">{salad.priceDollar}<sup>{salad.priceCent}</sup></p>
                                    <hr className="hr-secondary" />
                 </Media>
             </React.Fragment>
@@ -50,4 +50,4 @@ function RenderPizza({pizza}){
     
 }
 
-export default PizaList;
+export default SaladList;

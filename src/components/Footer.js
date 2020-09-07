@@ -1,6 +1,6 @@
 import React from 'react';
-import { Nav,Navbar, NavItem, Button } from 'reactstrap';
-import { NavLink, Link } from 'react-router-dom';
+import { Nav,Navbar, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 function Footer(props) {
     return (
